@@ -231,3 +231,9 @@ elseif &filetype == 'matlab'
     exec "!time octave %"
 endif
 endfunc
+
+
+
+
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
