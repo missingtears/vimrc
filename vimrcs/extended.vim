@@ -8,6 +8,8 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => GUI related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:airline_theme='one'
+
 " Set font according to system
 if has("mac") || has("macunix")
     set gfn=IBM\ Plex\ Mono:h14,Hack:h14,Source\ Code\ Pro:h15,Menlo:h15
@@ -28,8 +30,9 @@ set guioptions-=l
 set guioptions-=L
 
 " Colorscheme
+" colorscheme peaksea
+colorscheme one
 set background=dark
-colorscheme peaksea
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
