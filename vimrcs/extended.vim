@@ -8,13 +8,12 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => GUI related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" let g:airline_theme='one'
 
 " Set font according to system
 if has("mac") || has("macunix")
     set gfn=IBM\ Plex\ Mono:h14,Hack:h14,Source\ Code\ Pro:h15,Menlo:h15
 elseif has("win16") || has("win32")
-    set gfn=IBM\ Plex\ Mono:h14,Source\ Code\ Pro:h12,Bitstream\ Vera\ Sans\ Mono:h11
+    set gfn=IBM\ Plex\ Mono:h14,Source\ Code\ Pro:h12,Bitstream\ Vera\ Sans\ Mono:h9
 elseif has("gui_gtk2")
     set gfn=IBM\ Plex\ Mono\ 14,:Hack\ 14,Source\ Code\ Pro\ 12,Bitstream\ Vera\ Sans\ Mono\ 11
 elseif has("linux")
@@ -23,6 +22,8 @@ elseif has("unix")
     set gfn=Monospace\ 11
 endif
 
+" set guifont=Bitstream\ Vera\ Sans\ Mono:h10
+
 " Disable scrollbars (real hackers don't use scrollbars for navigation!)
 set guioptions-=r
 set guioptions-=R
@@ -30,11 +31,12 @@ set guioptions-=l
 set guioptions-=L
 
 " Colorscheme
-let g:solarized_termcolors=256
-" syntax enable
+let g:airline_theme='one'
 set background=dark
-colorscheme solarized
-" colorscheme one
+" let g:solarized_termcolors=256
+" syntax enable
+" colorscheme solarized
+colorscheme one
 " colorscheme dracula
 
 
