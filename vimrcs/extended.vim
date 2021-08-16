@@ -8,7 +8,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => GUI related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:airline_theme='one'
+" let g:airline_theme='one'
 
 " Set font according to system
 if has("mac") || has("macunix")
@@ -30,9 +30,12 @@ set guioptions-=l
 set guioptions-=L
 
 " Colorscheme
-" colorscheme peaksea
-colorscheme one
+let g:solarized_termcolors=256
+" syntax enable
 set background=dark
+colorscheme solarized
+" colorscheme one
+" colorscheme dracula
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
