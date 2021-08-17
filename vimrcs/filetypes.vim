@@ -63,7 +63,7 @@ if exists('$TMUX')
     if has('nvim')
         set termguicolors
     else
-        set term=screen-256color 
+        " set term=xterm
     endif
 endif
 
