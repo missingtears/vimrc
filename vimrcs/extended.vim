@@ -8,7 +8,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => GUI related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:airline_theme='one'
 
 " Set font according to system
 if has("mac") || has("macunix")
@@ -23,6 +22,8 @@ elseif has("unix")
     set gfn=Monospace\ 11
 endif
 
+" set guifont=Bitstream\ Vera\ Sans\ Mono:h10
+
 " Disable scrollbars (real hackers don't use scrollbars for navigation!)
 set guioptions-=r
 set guioptions-=R
@@ -30,6 +31,7 @@ set guioptions-=l
 set guioptions-=L
 
 " Colorscheme
+let g:airline_theme='one'
 " let g:solarized_termcolors=256
 " syntax enable
 set background=dark
